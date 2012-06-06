@@ -1,4 +1,5 @@
 function MainCtrl($scope) {
-  $scope.name = 'Joe Soap';
+  $scope.name = 'Joe Soap';  
+  
 }
 MainCtrl.$inject = ['$scope'];
