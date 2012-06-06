@@ -1,0 +1,10 @@
+'use strict';
+
+// Declare app level module which depends on filters, and services
+angular.module('drupalng', []).
+    config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+        when('/', {template: 'app/partials/home.html', controller: HomeCtrl}).
+        when('/about', {template: 'app/partials/about.html', controller: AboutCtrl}).
+        otherwise({redirectTo: '/'});
+    }]);

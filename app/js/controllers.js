@@ -3,3 +3,11 @@ function MainCtrl($scope) {
   
 }
 MainCtrl.$inject = ['$scope'];
+
+function HomeCtrl($scope) {
+}
+HomeCtrl.$inject = ['$scope'];
+
+function AboutCtrl($scope) {
+}
+AboutCtrl.$inject = ['$scope'];
