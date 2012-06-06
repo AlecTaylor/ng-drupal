@@ -1,1 +1,9 @@
-<p>about</p>
+<div class="well">
+<h1>{{about_node.title}}</h1>
+<div><img ng-src="http://localhost/drupal7/sites/default/files/styles/medium/public/field/image/{{about_node.field_image.und[0].filename}}" /></div>
+</div>
+<div class="fluid-row">  
+  <div class="span5" style="margin-top:10px;" ng-bind-html="about_node.body.und[0].value"></div>
+</div>
+
+

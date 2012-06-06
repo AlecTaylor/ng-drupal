@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('drupalng', []).
+angular.module('drupalng', ['drupalng.services','ngSanitize']).
     config(['$routeProvider', function($routeProvider) {
     $routeProvider.
         when('/', {template: 'app/partials/home.html', controller: HomeCtrl}).

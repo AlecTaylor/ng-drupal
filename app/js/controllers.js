@@ -5,9 +5,12 @@ function MainCtrl($scope) {
 MainCtrl.$inject = ['$scope'];
 
 function HomeCtrl($scope) {
+  
 }
 HomeCtrl.$inject = ['$scope'];
 
-function AboutCtrl($scope) {
+function AboutCtrl($scope, AboutNode) {
+  $scope.about_node = AboutNode.query();  
+  console.log($scope.about_node);
 }
-AboutCtrl.$inject = ['$scope'];
+AboutCtrl.$inject = ['$scope','AboutNode'];
