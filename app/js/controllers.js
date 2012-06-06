@@ -1,16 +1,14 @@
 function MainCtrl($scope) {
-  $scope.name = 'Joe Soap';  
-  
+  $scope.name = 'Joe Soap';    
 }
 MainCtrl.$inject = ['$scope'];
 
-function HomeCtrl($scope) {
-  
+function HomeCtrl($scope, BlogRoll) {
+  $scope.blog_roll = BlogRoll.query();
 }
-HomeCtrl.$inject = ['$scope'];
+HomeCtrl.$inject = ['$scope','BlogRoll'];
 
 function AboutCtrl($scope, AboutNode) {
   $scope.about_node = AboutNode.query();  
-  console.log($scope.about_node);
 }
 AboutCtrl.$inject = ['$scope','AboutNode'];
