@@ -3,6 +3,6 @@ Showing {{blog_roll.length}} posts
   <div class="span4" ng-repeat="post in blog_roll">
     <h2>{{post.node_title}}</h2>
     <div ng-bind-html="post.body"></div>
-    <p><a class="btn" href="#/post/{{post.nid}}">View details &raquo;</a></p>
+    <p><a class="btn" href="#/post/{{post.nid}}">View details <i class="icon-arrow-right"></i></a></p>
   </div><!--/span-->
 </div><!--/row-->
