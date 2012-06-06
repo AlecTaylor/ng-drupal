@@ -1,0 +1,21 @@
+#ng-Drupal: An AngularJS Demo
+
+A very simple AngularJS app to demonstrate connecting to Drupal7 Rest Services
+
+- Retrieves a specific node from Drupal
+- Retrieves a view from Drupal
+- Uses $routeParams to display detail node
+
+*** Drupal ***
+Since this is not a Drupal demo I will not detail the Drupal setup here.
+
+In brief, you will need to have a Drupal7 instance with the following modules:
+- Services 7.x-3.1
+- Views 7.x-3.3
+- Services Views 7.x-1.0-beta1
+
+You will need to configure A rest server endpoint 'api' and expose the necessary resources.
+
+The demo also makes use of a view called 'blog_roll' which displays a list of blog posts (fields: title, body)
+
+
