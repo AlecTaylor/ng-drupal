@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
     <title>AngularJS + Drupal</title>
@@ -52,7 +52,7 @@
       <div class="row-fluid">
         <div class="span12">
           <div class="hero-unit">
-            <h1>Hello</h1>
+            <h1>{{'Hello' + ' ' + 'World!'}}</h1>
           </div>
           <div class="row-fluid">
             <div class="span4">
@@ -103,7 +103,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="app/libs/jquery-1.7.2.min.js"></script>
- 
+    <script src="app/libs/angular-1.0.0rc10.js"></script>
+    <script src="app/libs/angular-resource-1.0.0rc10.js"></script> 
 
   </body>
 </html>
