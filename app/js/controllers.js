@@ -12,3 +12,8 @@ function AboutCtrl($scope, AboutNode) {
   $scope.about_node = AboutNode.query();  
 }
 AboutCtrl.$inject = ['$scope','AboutNode'];
+
+function PostCtrl($scope, $routeParams, Post) {
+ $scope.post = Post.get({nid: $routeParams.nid});
+}
+PostCtrl.$inject = ['$scope','$routeParams','Post'];

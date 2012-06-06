@@ -6,5 +6,6 @@ angular.module('drupalng', ['drupalng.services','ngSanitize']).
     $routeProvider.
         when('/', {template: 'app/partials/home.html', controller: HomeCtrl}).
         when('/about', {template: 'app/partials/about.html', controller: AboutCtrl}).
+        when('/post/:nid', {template: 'app/partials/post.html', controller: PostCtrl}).
         otherwise({redirectTo: '/'});
     }]);
